@@ -1,3 +1,75 @@
 @use 'colors';
 @use 'typography';
+@use 'mixins';
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    @include mixins.flex(flex, column, center, center);
+    background-color: colors.$cream;
+    min-height: 94vh;
+}
+
+.card-component {
+    @include mixins.flex(flex, row, center, center);
+    max-height: 450px;
+    max-width: 600px;
+    background-color: colors.$white;
+    border-radius: 10px;
+    margin: 10px;
+    &__card-image-container{
+        width: 50%;
+    }
+    &__card-summary {
+        width: 50%;
+        p {
+            margin: 15px 0;
+            font-size: typography.$paragraph-size;
+        }
+    }
+}
+
+.card-image-container__card-image {
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.card-summary {
+    &__item-type {
+        font-family: typography.$montserrat;
+        text-transform: uppercase;
+    }
+    &__item-title {
+        font-family: typography.$fraunces;
+    }
+}
+
+.footer {
+    min-height: 6vh;
+}
+
+@media screen and (max-width: 375px) {
+    .card-component {
+        @include mixins.flex(flex, column, center, center);
+        max-width: 340px;
+        &__card-image-container{
+            height: 240px;
+            width: 100%;
+        }
+        &__card-summary {
+            padding: 0 25px;
+            height: 370px;
+            width: 100%;
+        }
+    }
+
+    .card-image-container__card-image {
+        border-radius: 10px 10px 0 0px;
+        object-fit: cover;
+    }
+}
