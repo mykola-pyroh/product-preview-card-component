@@ -84,8 +84,9 @@ main {
   height: 48px;
   width: 100%;
 }
-.card-summary__add-btn :hover {
+.card-summary__add-btn:hover {
   background-color: hsl(212deg, 21%, 14%);
+  border-color: hsl(212deg, 21%, 14%);
 }
 
 .footer {
