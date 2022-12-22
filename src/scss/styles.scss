@@ -72,6 +72,7 @@ main {
         }
     }
     &__add-btn {
+        @include mixins.flex(flex, row, center, center);
         background-color: colors.$dark_cyan;
         border-radius: 10px;
         border-color: colors.$dark_cyan;
@@ -79,20 +80,26 @@ main {
         font-family: typography.$montserrat;
         height: 48px;
         width: 100%;
+        :first-child {
+            padding-right: 10px;
+        }
         &:hover {
             background-color: colors.$very_dark_blue;
             border-color: colors.$very_dark_blue;
+            cursor: pointer;
         }
     }
 }
 
 .footer {
+    @include mixins.flex(flex, column, center, center);
     min-height: 6vh;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 602px) {
     .card-component {
         @include mixins.flex(flex, column, center, center);
+        max-height: fit-content;
         max-width: 340px;
         &__card-image-container{
             height: 240px;

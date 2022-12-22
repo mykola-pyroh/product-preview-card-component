@@ -76,6 +76,10 @@ main {
   text-decoration: line-through;
 }
 .card-summary__add-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(158deg, 36%, 37%);
   border-radius: 10px;
   border-color: hsl(158deg, 36%, 37%);
@@ -84,21 +88,30 @@ main {
   height: 48px;
   width: 100%;
 }
+.card-summary__add-btn :first-child {
+  padding-right: 10px;
+}
 .card-summary__add-btn:hover {
   background-color: hsl(212deg, 21%, 14%);
   border-color: hsl(212deg, 21%, 14%);
+  cursor: pointer;
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 6vh;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 602px) {
   .card-component {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-height: fit-content;
     max-width: 340px;
   }
   .card-component__card-image-container {
