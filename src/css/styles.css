@@ -34,7 +34,7 @@ main {
   width: 50%;
 }
 .card-component__card-summary p {
-  margin: 15px 0;
+  margin: 16px 0;
 }
 
 .card-image-container__card-image {
@@ -57,6 +57,35 @@ main {
 .card-summary__item-summary {
   color: hsl(228deg, 12%, 48%);
   font-family: "Montserrat", sans-serif;
+}
+.card-summary__item-cost {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+}
+.card-summary__item-cost :first-child {
+  color: hsl(158deg, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  margin-right: 20px;
+}
+.card-summary__item-cost :last-child {
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+}
+.card-summary__add-btn {
+  background-color: hsl(158deg, 36%, 37%);
+  border-radius: 10px;
+  border-color: hsl(158deg, 36%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  height: 48px;
+  width: 100%;
+}
+.card-summary__add-btn :hover {
+  background-color: hsl(212deg, 21%, 14%);
 }
 
 .footer {

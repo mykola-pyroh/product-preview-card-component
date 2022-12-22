@@ -22,7 +22,7 @@ main {
     background-color: colors.$white;
     border-radius: 10px;
     margin: 10px;
-    &__card-image-container{
+    &__card-image-container {
         width: 50%;
     }
     &__card-summary {
@@ -30,7 +30,7 @@ main {
         height: 100%;
         width: 50%;
         p {
-            margin: 15px 0;
+            margin: 16px 0;
         }
     }
 }
@@ -53,9 +53,35 @@ main {
         font-family: typography.$fraunces;
         font-size: 32px;
     }
-    &__item-summary{
+    &__item-summary {
         color: colors.$dark_grayish_blue;
         font-family: typography.$montserrat;
+    }
+    &__item-cost {
+        @include mixins.flex(flex, row, none, center);
+        :first-child {
+            color: colors.$dark_cyan;
+            font-family: typography.$fraunces;
+            font-size: 28px;
+            margin-right: 20px;
+        }
+        :last-child {
+            color: colors.$dark_grayish_blue;
+            font-family: typography.$montserrat;
+            text-decoration: line-through;
+        }
+    }
+    &__add-btn {
+        background-color: colors.$dark_cyan;
+        border-radius: 10px;
+        border-color: colors.$dark_cyan;
+        color: colors.$white;
+        font-family: typography.$montserrat;
+        height: 48px;
+        width: 100%;
+        :hover {
+            background-color: colors.$very_dark_blue;
+        }
     }
 }
 
