@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
 
 main {
@@ -28,11 +29,12 @@ main {
   width: 50%;
 }
 .card-component__card-summary {
+  padding: 30px;
+  height: 100%;
   width: 50%;
 }
 .card-component__card-summary p {
   margin: 15px 0;
-  font-size: 14px;
 }
 
 .card-image-container__card-image {
@@ -42,11 +44,19 @@ main {
 }
 
 .card-summary__item-type {
+  color: hsl(228deg, 12%, 48%);
   font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  letter-spacing: 6px;
   text-transform: uppercase;
 }
 .card-summary__item-title {
   font-family: "Fraunces", serif;
+  font-size: 32px;
+}
+.card-summary__item-summary {
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
 }
 
 .footer {
