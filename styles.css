@@ -5,4 +5,59 @@
   font-size: 14px;
 }
 
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2ebe3;
+  min-height: 94svh;
+}
+
+.preview-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 10px;
+}
+.preview-card__img {
+  width: 300px;
+}
+.preview-card__product-info {
+  padding: 32px;
+  width: 300px;
+}
+.preview-card__product-category {
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 6px;
+}
+.preview-card__product-title {
+  font-family: "Fraunces", sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+.preview-card__product-summary {
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #f2ebe3;
+  min-height: 6svh;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -8,4 +8,47 @@
     font-size: 14px;
 }
 
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $Cream;
+    min-height: 94svh;
+}
+
+.preview-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $White;
+    border-radius: 10px;
+    &__img {
+        width: 300px;
+    }
+    &__product-info {
+        padding: 32px;
+        width: 300px;
+    }
+    &__product-category {
+        @include typography(montserrat-regular);
+        font-size: 12px;
+        letter-spacing: 6px;
+    }
+    &__product-title {
+        @include typography(fraunces-bold);
+    }
+    &__product-summary {
+        @include typography(montserrat-regular);
+        line-height: 24px;
+    }
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: $Cream;
+    min-height: 6svh;
+}
+
 @import "./mediaQuery";
