@@ -1,0 +1,32 @@
+@media screen and (max-width: 375px) {
+    .preview-card {
+        flex-direction: column;
+        margin: 28px 0 0;
+        width: 342px;
+        &__img {
+            width: 100%;
+            img {
+                border-radius: 10px 10px 0 0;
+                content: url("./src/imgs/image-product-mobile.jpg");
+                height: 240px;
+                width: 100%;
+            }
+        }
+        &__product-info {
+            padding: 24px;
+            width: 100%;
+        }
+        &__product-title {
+            margin: 12px 0 0;
+        }
+        &__product-summary {
+            margin: 16px 0 0;
+        }
+        &__product-cost {
+            margin: 24px 0 0;
+        }
+        &__cart-btn {
+            width: 100%;
+        }
+    }
+}

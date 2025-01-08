@@ -24,6 +24,11 @@
     border-radius: 10px;
     &__img {
         width: 300px;
+        img {
+            display: block;
+            border-radius: 10px 0 0 10px;
+            width: 100%;
+        }
     }
     &__product-info {
         padding: 32px;
@@ -31,22 +36,66 @@
     }
     &__product-category {
         @include typography(montserrat-regular);
+        color: $DarkGrayishBlue;
+        text-transform: uppercase;
         font-size: 12px;
-        letter-spacing: 6px;
+        letter-spacing: 5px;
     }
     &__product-title {
         @include typography(fraunces-bold);
+        color: $VeryDarkBlue;
+        margin: 20px 0 0;
     }
     &__product-summary {
         @include typography(montserrat-regular);
-        line-height: 24px;
+        line-height: 23px;
+        color: $DarkGrayishBlue;
+        margin: 24px 0 0;
+    }
+    &__product-cost {
+        display: flex;
+        align-items: center;
+        margin: 30px 0 0;
+        &-new {
+            @include typography(fraunces-bold);
+            color: $DarkCyan;
+        }
+        &-old {
+            @include typography(montserrat-regular);
+            color: $DarkGrayishBlue;
+            font-size: 13px;
+            line-height: 23px;
+            text-decoration: line-through;
+            margin: 0 0 0 20px
+        }
+    }
+    &__cart-btn {
+        @include typography(montserrat-bold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $DarkCyan;
+        border: none;
+        border-radius: 8px;
+        color: $White;
+        margin: 30px 0 0;
+        height: 48px;
+        width: 236px;
+        &:hover {
+            background-color: $DarkCyanHover;
+            cursor: pointer;
+        }
+        img {
+            margin: 0 12px 0 0;
+        }
     }
 }
 
 #footer {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10px;
     background: $Cream;
     min-height: 6svh;
 }
